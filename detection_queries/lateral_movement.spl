@@ -1,0 +1,7 @@
+# Lateral Movement Detection
+
+# Purpose: Detect remote authentication activity across hosts
+
+index=winlogs EventCode=4624 Logon_Type=3
+| stats count by Account_Name, Workstation_Name, Source_Network_Address, host
+| sort - count

@@ -1,0 +1,9 @@
+# Failed Login Detection
+
+# Purpose: Detect repeated failed authentication attempts that may indicate password spraying or brute-force activity
+
+index=winlogs EventCode=4625
+| stats count by Account_Name, Source_Network_Address, host
+| where count > 5
+| sort - count
+

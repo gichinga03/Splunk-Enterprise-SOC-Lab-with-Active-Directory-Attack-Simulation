@@ -1,0 +1,7 @@
+# PowerShell Abuse Detection
+
+# Purpose: Detect suspicious PowerShell execution activity from Sysmon logs
+
+index=winlogs EventCode=1 Image="*powershell.exe"
+| table _time host User Image CommandLine ParentImage
+| sort - _time
