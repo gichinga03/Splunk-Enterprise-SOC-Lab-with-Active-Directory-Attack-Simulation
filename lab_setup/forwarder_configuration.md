@@ -1,4 +1,6 @@
 # Forwarder Configuration
+<img width="1437" height="1079" alt="Screenshot from 2026-03-23 08-54-52" src="https://github.com/user-attachments/assets/b0631675-6782-4be7-94e2-a6a199cb5294" />
+
 
 ## Project Purpose
 
@@ -172,13 +174,7 @@ Detection readiness
 
 ---
 
-## Screenshots
 
-Forwarder setup and event validation screenshots stored in:
-
-```text id="m3f6ka"
-reports/Forwarder_Configuration.pdf
-```
 
 ---
 
