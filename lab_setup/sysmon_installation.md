@@ -218,15 +218,7 @@ Continuous event collection
 
 ---
 
-## Screenshots
 
-Installation screenshots and event samples are stored in:
-
-```text id="n4z7qy"
-reports/Sysmon_Installation.pdf
-```
-
----
 
 ## Next Stage
 
