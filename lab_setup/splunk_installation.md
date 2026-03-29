@@ -17,6 +17,9 @@ Splunk provides:
 ---
 
 ## Deployment Host
+ . initial on ubuntu server 
+ <img width="3840" height="2160" alt="Screenshot from 2026-03-23 08-13-06" src="https://github.com/user-attachments/assets/bac70415-15f6-4aeb-8c3d-9df7030b7659" />
+
 
 ### Installed On
 
@@ -94,16 +97,22 @@ Splunk receives logs from:
 * Sysmon Operational Logs
 
 ---
+<img width="3063" height="1434" alt="Screenshot from 2026-03-23 08-16-37" src="https://github.com/user-attachments/assets/ee19883f-7ff9-4255-be25-6e4c1d024633" />
+
 
 ## Search Validation
 
 Initial searches were performed to confirm ingestion.
 
 ### Example Query
+<img width="3824" height="2156" alt="Screenshot from 2026-03-23 09-48-33" src="https://github.com/user-attachments/assets/30d38cc9-9235-4adf-87f6-1256d7a1afa5" />
+
 
 ```spl id="d8u4lp"
 index=winlogs
 ```
+<img width="3824" height="2156" alt="Screenshot from 2026-03-24 13-49-10" src="https://github.com/user-attachments/assets/b7650bc0-10b4-4f54-b7d7-e24c1d3b4579" />
+<img width="3824" height="2156" alt="Screenshot from 2026-03-24 13-50-56" src="https://github.com/user-attachments/assets/1ebe320a-814d-49f2-9b31-72bde6f68d43" />
 
 This confirms incoming events from endpoints.
 
@@ -150,13 +159,7 @@ Retention of security events
 
 ---
 
-## Screenshots
 
-Installation screenshots and search validation are stored in:
-
-```text id="e1x6tw"
-reports/Splunk_Deployment.pdf
-```
 
 ---
 
