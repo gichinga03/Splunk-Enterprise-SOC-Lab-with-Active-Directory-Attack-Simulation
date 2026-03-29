@@ -29,6 +29,8 @@ Sysmon provides:
 ## Sysmon Package Used
 
 Installed using Sysinternals Sysmon.
+<img width="3840" height="2160" alt="Screenshot from 2026-03-21 11-34-15" src="https://github.com/user-attachments/assets/5409a34a-4082-4d33-a831-17034a53c90b" />
+
 
 ### Binary
 
@@ -59,6 +61,8 @@ This command:
 * Loads the custom monitoring configuration
 
 ---
+<img width="3840" height="2160" alt="Screenshot from 2026-03-21 14-02-36" src="https://github.com/user-attachments/assets/1b8cc4a8-e0a3-4054-b08c-0abcdf385164" />
+
 
 ## Service Verification
 
@@ -93,6 +97,8 @@ Applications and Services Logs
 ```
 
 ---
+<img width="3840" height="2160" alt="Screenshot from 2026-03-21 11-40-10" src="https://github.com/user-attachments/assets/f767f08d-adbd-4bc2-89d2-307e83f68ce7" />
+
 
 ## Key Events Collected
 
@@ -171,6 +177,8 @@ A simple test command was executed to confirm logging.
 ```powershell id="j2f8vn"
 notepad.exe
 ```
+<img width="3840" height="2160" alt="Screenshot from 2026-03-21 14-08-38" src="https://github.com/user-attachments/assets/fc384511-2c3f-40a3-966c-89e62440669f" />
+
 
 This generated a Sysmon Process Creation event.
 
