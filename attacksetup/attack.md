@@ -14,7 +14,9 @@ Identifying the attack surface of the Domain Controller.
 * **Action:** Executed an aggressive scan: `nmap -sC -sV -p- <Target_IP>`.
 * **Findings:** Discovered Port 88 (Kerberos), 135/445 (RPC/SMB), and 389 (LDAP) were open.
 
-![Nmap Screenshot](PASTE_LINK_TO_IMAGE_HERE)
+<img width="1920" height="1080" alt="Screenshot_2026-03-30_01_52_49" src="https://github.com/user-attachments/assets/e9e8c551-2ebf-4f3d-a85b-5624ce8d22a5" />
+<img width="1920" height="1080" alt="Screenshot_2026-03-30_01_52_54" src="https://github.com/user-attachments/assets/edf259b1-f513-4d7e-936c-c27f84f3a53f" />
+
 
 **Splunk Detection:**
 * **Log Source:** `WinEventLog:Security` / Firewall Logs
@@ -33,7 +35,8 @@ Mapping the internal structure of the Domain.
 * **Action:** Used standard Windows commands and PowerShell to query the AD database.
 * **Command:** `net user /domain` and `net group "Domain Admins" /domain`.
 
-![Enumeration Screenshot](PASTE_LINK_TO_IMAGE_HERE)
+<img width="1920" height="1080" alt="Screenshot_2026-03-30_02_21_46" src="https://github.com/user-attachments/assets/7d2d5c6e-6ace-46b5-8f59-3227586894cc" />
+
 
 **Splunk Detection:**
 * **Log Source:** `WinEventLog:Security`
@@ -52,7 +55,11 @@ Testing the security of network shares for lateral movement or data exfiltration
 * **Action:** Used `smbclient` to connect to the `C$` share.
 * **Command:** `put mimikatz.exe` and `get sensitive_data.txt`.
 
-![SMB Screenshot](PASTE_LINK_TO_IMAGE_HERE)
+<img width="1920" height="1080" alt="Screenshot_2026-03-30_02_33_37" src="https://github.com/user-attachments/assets/e5df4316-c046-4f22-adb5-070a1a8feaab" />
+<img width="1920" height="1080" alt="Screenshot_2026-03-30_02_36_10" src="https://github.com/user-attachments/assets/453f0141-960f-459d-813a-4b97a1d5cb49" />
+<img width="1920" height="1080" alt="Screenshot_2026-03-30_02_45_51" src="https://github.com/user-attachments/assets/9b97be1a-0f18-4a1c-94e5-0c2f76f3cb2a" />
+
+
 
 **Splunk Detection:**
 * **Log Source:** `WinEventLog:Security`
@@ -71,7 +78,7 @@ Stealing service account hashes without needing administrative privileges.
 * **Action:** Used Impacket's `GetUserSPNs.py` to identify accounts with SPNs and request the hash.
 * **Tool:** `impacket-GetUserSPNs -dc-ip <IP> <DOMAIN>/<USER> -request`.
 
-![Kerberoasting Screenshot](PASTE_LINK_TO_IMAGE_HERE)
+\
 
 **Splunk Detection:**
 * **Log Source:** `WinEventLog:Security`
@@ -90,7 +97,8 @@ Dumping local credentials for persistence and further lateral movement.
 * **Action:** Leveraged `crackmapexec` with administrative credentials.
 * **Command:** `crackmapexec smb <IP> -u Administrator -p 'Password' --sam`.
 
-![SAM Hash Screenshot](PASTE_LINK_TO_IMAGE_HERE)
+<img width="1920" height="1080" alt="Screenshot_2026-03-30_02_17_41" src="https://github.com/user-attachments/assets/e6acb789-6a1e-4386-9fe4-e50dc82b2598" />
+
 
 **Splunk Detection:**
 * **Log Source:** `Microsoft-Windows-Sysmon/Operational`
